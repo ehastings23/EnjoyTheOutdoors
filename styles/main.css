@@ -4,23 +4,28 @@
 }
 
 body {
-    background-color: rgb(124, 101, 64);
-    color: rgb(153, 225, 38);
+    background-image: url(/data/images/austrian-alps.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav{
-    background-color: black;
-}
+
 nav a {
     display: inline-block;
-    background-color: saddlebrown;
+    background-color: rgb(127, 169, 182);
     color: goldenrod;
     margin-right: 1px;
     padding: 0.5rem;
     text-decoration: none;
+    transition: all 0.3s ease-in-out; /* Added transition for smooth effects */
 }
 
+nav a:hover {
+    box-shadow: 0px 0px 10px rgb(30, 253, 1); /* Added a subtle shadow */
+    transform: scale(1.05); 
+}
 nav a.selected {
-    background-color: rgb(42, 165, 65);
+    background-color: rgb(119, 189, 28);
     color: gold;
 }
